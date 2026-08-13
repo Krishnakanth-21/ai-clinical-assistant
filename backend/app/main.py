@@ -6,7 +6,6 @@ app = FastAPI(
     description="Backend API for AI Clinical Assistant"
 )
 
-
 @app.get("/")
 def health_check():
     return {
@@ -14,7 +13,6 @@ def health_check():
         "service": "AI Clinical Assistant",
         "version": "1.0.0"
     }
-
 
 @app.get("/health")
 def health():
