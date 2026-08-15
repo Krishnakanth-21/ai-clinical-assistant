@@ -17,5 +17,6 @@ def health_check():
 @app.get("/health")
 def health():
     return {
+        
         "message": "Application is running successfully"
     }
